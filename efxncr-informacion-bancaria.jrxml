@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-03-21T14:00:30 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="efxncr-identificacion" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="2aefb6d8-3a1d-4f69-bdfc-a845b66df30d">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="25" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="570" height="25" forecolor="#EFEFEF" backcolor="#999CA6" uuid="4d820d72-eb83-4f49-9557-003d39ae1b96">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="30" y="0" width="210" height="25" forecolor="#FFFFFF" uuid="c4649ece-088f-4327-818c-75938481d6e6">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="16"/>
+				</textElement>
+				<text><![CDATA[Información Bancaria]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="94">
+			<staticText>
+				<reportElement x="0" y="8" width="140" height="32" uuid="0109c42f-d876-4b96-992d-ae22b2301586"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Número de Cuentas Corrientes Bloqueadas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="8" width="130" height="32" uuid="7ada6175-76a4-4bfd-a2c7-73dc2fc798cc"/>
+				<box leftPadding="19">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="8" width="140" height="32" uuid="60179ac1-1e5e-41bf-973a-d6f1666f1c71"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Créditos Impagos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="8" width="130" height="32" uuid="56c34fad-6c27-44e2-b335-0638a43013c9"/>
+				<box leftPadding="19">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="53" width="140" height="32" uuid="5d2c0270-cbc2-46ed-90ea-db01d71c58f6"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Indicador de Impedido abrir Cuenta Corriente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="53" width="130" height="32" uuid="bae2b597-60da-49db-a46d-fe17416c267b"/>
+				<box leftPadding="19">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sí]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="53" width="140" height="32" uuid="4625811a-6946-47f1-bcbc-2f5eb7a587df"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Cantidad de Órdenes de no pago en los últimos 6 meses]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="53" width="130" height="32" uuid="11a3605e-7b62-407e-acf5-b9383a433814"/>
+				<box leftPadding="19">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+</jasperReport>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-03-23T03:15:43 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="efxncr-identificacion" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="2aefb6d8-3a1d-4f69-bdfc-a845b66df30d">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="consultasRutUltimos6Meses" class="java.lang.String" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="fecha" class="java.lang.String"/>
+	<field name="empresa" class="java.lang.String"/>
+	<field name="informe" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="90">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement x="0" y="70" width="110" height="20" uuid="e66e6d82-69cc-4b8e-a62b-253efae90882">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Fecha]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="70" width="320" height="20" uuid="6a87d450-8f84-4c38-8b8f-a7c4bd8d9cf7"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Empresa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="70" width="140" height="20" uuid="f91509db-e82d-4975-b67c-218c5964074b"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Informe]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="0" width="570" height="25" forecolor="#EFEFEF" backcolor="#999CA6" uuid="4d820d72-eb83-4f49-9557-003d39ae1b96">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="30" y="0" width="410" height="25" forecolor="#FFFFFF" uuid="c4649ece-088f-4327-818c-75938481d6e6">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="16"/>
+				</textElement>
+				<text><![CDATA[Consultas al Rut]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="0" y="35" width="570" height="30" backcolor="#F6F6F6" uuid="385b98f9-be8b-4b52-9764-81819074ed3e"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Rut registra " + $P{consultasRutUltimos6Meses} + " consultas en los últimos 6 meses"]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<rectangle>
+				<reportElement x="0" y="0" width="570" height="20" backcolor="#F6F6F6" uuid="d769c71d-bfea-4f3e-99d9-145e9f43a5aa">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<printWhenExpression><![CDATA[($V{REPORT_COUNT} % 2) == 0]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="110" height="20" uuid="270699de-03fd-4a52-8115-b82138c688e5">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="0" width="320" height="20" uuid="75fd766b-8f6e-4822-9296-bb265845f9e8"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{empresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="0" width="140" height="20" uuid="51de96ec-2338-4302-a797-32bf0bcbaa86"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{informe}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

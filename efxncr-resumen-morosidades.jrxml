@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-03-23T00:07:05 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="efxncr-identificacion" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="2aefb6d8-3a1d-4f69-bdfc-a845b66df30d">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="docsPeriodoUltimosSeis" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsPeriodoSeisDoce" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsPeriodoDoce24" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsPeriodoMas24" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsPeriodoTotales" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsAcumuladosUltimosSeis" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsAcumuladosSeisDoce" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsAcumuladosDoce24" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsAcumuladosMas24" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsAcumuladosTotales" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsMontosPeriodoUltimosSeis" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsMontosPeriodoSeisDoce" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsMontosPeriodoDoce24" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsMontosPeriodoMas24" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsMontosPeriodoTotales" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsMontosAcumuladosUltimosSeis" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsMontosAcumuladosSeisDoce" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsMontosAcumuladosDoce24" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsMontosAcumuladosMas24" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsMontosAcumuladosTotales" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="morosidadesTotalImpagos" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="morosidadesMontoTotalImpagos" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="morosidadesVencimientoUltimoProtesto" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="morosidadesMontoUltimoPago" class="java.lang.String" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="10" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="266">
+			<rectangle>
+				<reportElement x="0" y="40" width="140" height="80" backcolor="#F6F6F6" uuid="82f8154c-e83a-400b-8f14-0d35d866859d"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="0" y="90" width="140" height="30" backcolor="#F6F6F6" uuid="5898a2cb-98be-402a-969d-779f6545e52b"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.0" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Total Impagos]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="140" y="40" width="180" height="80" backcolor="#F6F6F6" uuid="52cfcf42-437e-40db-ab28-f5eab169a2e8"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="140" y="90" width="180" height="30" backcolor="#F6F6F6" uuid="fa6dbc6a-2330-4d2a-89e5-223fb515bc86"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.0" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Monto Total Impagos]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="320" y="40" width="250" height="80" backcolor="#F6F6F6" uuid="09e480bd-135f-4051-a09c-5931b4da062f"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="320" y="40" width="160" height="30" backcolor="#F6F6F6" uuid="c7202928-75a8-4c27-9253-aa4c5b9d6326"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.0" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Vencimiento último protesto:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="320" y="70" width="100" height="30" backcolor="#F6F6F6" uuid="6616cf23-fa3e-414d-a902-a0194a605c78"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.0" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Monto último pago:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="130" width="120" height="30" uuid="55f26d73-dc4d-4cb5-98ea-49e918d8c6d3"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Distribución de Impagos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="130" width="100" height="30" uuid="ac25508a-5b27-4d7b-8b00-8d5eb64687fb"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Documentos Período]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="130" width="120" height="30" uuid="01b179f4-a5e8-4e73-bd9e-1e78939b4eea"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Documentos Acumulados]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="130" width="100" height="30" uuid="7870ebeb-cf74-4536-9a97-3f0a27677395"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Montos Período]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="130" width="130" height="30" uuid="5450bd00-b97d-4d7a-bbd4-3d747ca30515"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Montos Acumulados M$]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="160" width="120" height="20" backcolor="#F6F6F6" uuid="b4739dff-caed-4319-92f5-84abbe257b91"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Últimos 6 meses]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="180" width="120" height="20" backcolor="#F6F6F6" uuid="9425d6b8-91b0-4453-8cfb-f10d99b9ea06"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[6 a 12 meses]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="200" width="120" height="20" backcolor="#F6F6F6" uuid="ec546e16-a67c-4ff1-be23-8fb97dc81e07"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[12 a 24 meses]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="220" width="120" height="20" backcolor="#F6F6F6" uuid="cab220e1-13cd-4134-a50d-191a919673c1"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Más de 24 meses]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="240" width="120" height="20" backcolor="#F6F6F6" uuid="f20896c6-0022-415a-a9af-3a1f8515123d"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Totales]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="0" width="570" height="25" forecolor="#EFEFEF" backcolor="#999CA6" uuid="4d820d72-eb83-4f49-9557-003d39ae1b96">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="30" y="0" width="410" height="25" forecolor="#FFFFFF" uuid="c4649ece-088f-4327-818c-75938481d6e6">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="16"/>
+				</textElement>
+				<text><![CDATA[Resumen de Morosidades, Protestos y Bolab]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="120" y="160" width="100" height="20" backcolor="#F6F6F6" uuid="7c815ad2-c09e-4da4-8151-e37f361db0f8"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{docsPeriodoUltimosSeis}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="220" y="160" width="120" height="20" backcolor="#F6F6F6" uuid="d033553a-70af-4a28-b57c-55b56e6b08b2"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{docsAcumuladosUltimosSeis}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="340" y="160" width="100" height="20" backcolor="#F6F6F6" uuid="3850a72a-a287-494d-a105-b0637ea36ca9"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{docsMontosPeriodoUltimosSeis}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="440" y="160" width="130" height="20" backcolor="#F6F6F6" uuid="a42cd8be-db46-4e52-aae4-2b914e65d32c"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{docsMontosAcumuladosUltimosSeis}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="120" y="180" width="100" height="20" backcolor="#FFFFFF" uuid="665708e3-2de6-413b-8700-5fee98feb017"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{docsPeriodoSeisDoce}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="220" y="180" width="120" height="20" backcolor="#FFFFFF" uuid="cb5aa876-fed4-4e59-aea2-4743591f1493"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{docsAcumuladosSeisDoce}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="340" y="180" width="100" height="20" backcolor="#FFFFFF" uuid="7adb0331-bc26-4ad9-a59f-3c0f5886b37b"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{docsMontosPeriodoSeisDoce}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="440" y="180" width="130" height="20" backcolor="#FFFFFF" uuid="64810530-9f8b-4373-945c-1e73bfaec9fc"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{docsMontosAcumuladosSeisDoce}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="120" y="200" width="100" height="20" backcolor="#F6F6F6" uuid="f922ae59-f89c-4e5e-893b-9bd500256680"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{docsPeriodoDoce24}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="220" y="200" width="120" height="20" backcolor="#F6F6F6" uuid="52c5633b-51a4-4e4d-bf01-5c56be81d61e"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{docsAcumuladosDoce24}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="340" y="200" width="100" height="20" backcolor="#F6F6F6" uuid="08c2aa93-cd58-434c-8fd9-af311031016b"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{docsMontosPeriodoDoce24}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="440" y="200" width="130" height="20" backcolor="#F6F6F6" uuid="e4ed02ff-267d-4de1-a3cc-5e7f7d9d1cb8"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{docsMontosAcumuladosDoce24}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="440" y="240" width="130" height="20" backcolor="#F6F6F6" uuid="7727fe83-cdf5-40da-83cb-babf3a8a79c5"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{docsMontosAcumuladosTotales}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="340" y="240" width="100" height="20" backcolor="#F6F6F6" uuid="28ca53af-3b30-4610-8591-74f6206ae220"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{docsMontosPeriodoTotales}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="220" y="240" width="120" height="20" backcolor="#F6F6F6" uuid="e15ffa62-e2c8-4ad2-b0d2-dae643d715aa"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{docsAcumuladosTotales}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="120" y="240" width="100" height="20" backcolor="#F6F6F6" uuid="3aa0d2b6-5413-4492-a521-1f7f6ff1da13"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{docsPeriodoTotales}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="120" y="220" width="100" height="20" backcolor="#FFFFFF" uuid="4a1b58c5-fa41-4547-8494-8ae943a4d316"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{docsMontosPeriodoMas24}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="220" y="220" width="120" height="20" backcolor="#FFFFFF" uuid="c3664c18-f751-4aec-80d7-863298d3508d"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{docsAcumuladosMas24}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="340" y="220" width="100" height="20" backcolor="#FFFFFF" uuid="ae3b85c6-e1be-4664-99cc-860428af06b2"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{docsMontosPeriodoTotales}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="440" y="220" width="130" height="20" backcolor="#FFFFFF" uuid="2c0bb486-8a5f-46a2-9d29-68dbc0f1fba0"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{docsMontosAcumuladosMas24}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="0" y="40" width="140" height="50" backcolor="#F6F6F6" uuid="530def04-320c-4059-87b1-047a254a7245"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.0" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Roboto2" size="26" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{morosidadesTotalImpagos}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="140" y="40" width="180" height="50" backcolor="#F6F6F6" uuid="02c2ee8f-b606-47b6-8ab8-b702aec1048f"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.0" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Roboto2" size="26" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{morosidadesMontoTotalImpagos} == null ? null : "$ " + $P{morosidadesMontoTotalImpagos}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="463" y="40" width="97" height="30" backcolor="#F6F6F6" uuid="052be3cd-2d8c-4dd1-8fee-0640eb534ec5"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.0" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{morosidadesVencimientoUltimoProtesto}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="420" y="70" width="150" height="50" backcolor="#F6F6F6" uuid="3c598f07-cf6d-48e3-b492-1ac2bc12b7b0"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.0" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{morosidadesMontoUltimoPago} == null ? null : "$ " + $P{morosidadesMontoUltimoPago}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+</jasperReport>

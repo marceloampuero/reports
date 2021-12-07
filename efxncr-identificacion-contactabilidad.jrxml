@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-03-21T22:05:28 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="efxncr-identificacion" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="2aefb6d8-3a1d-4f69-bdfc-a845b66df30d">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="contactabilidadDireccion" class="java.lang.String"/>
+	<parameter name="contactabilidadCiudad" class="java.lang.String"/>
+	<parameter name="contactabilidadComuna" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="contactabilidadCodigoPostal" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="contactabilidadTipoDireccion" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="contactabilidadFecha" class="java.lang.String"/>
+	<parameter name="contactabilidadFuente" class="java.lang.String"/>
+	<parameter name="contactabilidadTelefono" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="contactabilidadFechaCarga" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="contactabilidadTelefonoFuente" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="contactabilidadDireccionElectronica" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="contactabilidadDireccionUrl" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="25" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="570" height="25" forecolor="#EFEFEF" backcolor="#999CA6" uuid="4d820d72-eb83-4f49-9557-003d39ae1b96">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="30" y="0" width="210" height="25" forecolor="#FFFFFF" uuid="c4649ece-088f-4327-818c-75938481d6e6">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="16"/>
+				</textElement>
+				<text><![CDATA[Contactabilidad]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="200">
+			<staticText>
+				<reportElement x="0" y="10" width="110" height="30" uuid="0109c42f-d876-4b96-992d-ae22b2301586">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Dirección]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="10" width="110" height="30" uuid="aa87986c-7f1a-401a-bf6f-55410943b4bc"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Ciudad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="10" width="110" height="30" uuid="b714fe6b-2bd1-4cec-a0f7-6308a199861a"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Comuna]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="10" width="60" height="30" uuid="df819020-06b7-493d-80b9-30f50c36efc8"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Código Postal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="10" width="60" height="30" uuid="31a6c236-cb95-40c3-be12-92f979d8ade4"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Tipo Dirección]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="10" width="60" height="30" uuid="be366400-544d-4a0f-9f6f-d2f6878febb9"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Fecha]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="510" y="10" width="60" height="30" uuid="f77e4237-cbc4-49df-bb40-f1c3318d6576"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Fuente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="90" width="100" height="20" uuid="f613c433-b158-456f-bbe6-c287e91e19c6"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Teléfono]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="90" width="90" height="20" uuid="e7d60e3d-94a6-4b84-b554-157ceeb08249"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Fecha de Carga]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="90" width="80" height="20" uuid="1c1ce851-9734-466f-9709-7a142dbdb34b"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Fuente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="150" width="225" height="20" uuid="f8a3e67a-3bdf-46ef-a78b-0feb0755587f"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Dirección Electrónica]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="225" y="150" width="219" height="20" uuid="7f0654d5-4bf6-41db-82e1-2f95e9faaf52"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Dirección Url]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="40" width="110" height="40" backcolor="#F6F6F6" uuid="280adce1-85d1-4b50-bea1-f234cfec1e9a"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{contactabilidadDireccion}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="110" y="40" width="110" height="40" backcolor="#F6F6F6" uuid="1c4b44fe-e605-413e-898f-a55375c57ae2"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{contactabilidadCiudad}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="220" y="40" width="110" height="40" backcolor="#F6F6F6" uuid="fc433834-e45b-4ca2-81db-4be72b2a044e"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{contactabilidadComuna}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="330" y="40" width="60" height="40" backcolor="#F6F6F6" uuid="00da5692-c4ca-4d4b-a2ed-877375272735"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{contactabilidadCodigoPostal}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="390" y="40" width="60" height="40" backcolor="#F6F6F6" uuid="df1d6b41-9af5-4da8-8c59-16fdf9db51c3"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{contactabilidadTipoDireccion}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="450" y="40" width="60" height="40" backcolor="#F6F6F6" uuid="dbdc3bb5-f8f7-4a91-a961-0c04f75de8fc"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{contactabilidadFecha}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="510" y="40" width="60" height="40" backcolor="#F6F6F6" uuid="0db4712b-5d4c-4180-8eda-77af463da8c8"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{contactabilidadFuente}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="110" width="100" height="20" backcolor="#F6F6F6" uuid="0190163c-0ee6-405d-a0a4-ecb57ba4d7b6"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{contactabilidadTelefono}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="100" y="110" width="90" height="20" backcolor="#F6F6F6" uuid="ac98c16a-be8a-44aa-9991-f496417d6781"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{contactabilidadFechaCarga}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="190" y="110" width="80" height="20" backcolor="#F6F6F6" uuid="601d1a2b-39a7-4733-bc57-6fac45c92bd1"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{contactabilidadTelefonoFuente}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="170" width="225" height="20" backcolor="#F6F6F6" uuid="de8b8af0-2881-4951-86ff-5c6684088b1d"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{contactabilidadDireccionElectronica}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="225" y="170" width="220" height="20" backcolor="#F6F6F6" uuid="0618b19b-c27f-48b9-8542-6168bfed2f9e"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{contactabilidadDireccionUrl}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+</jasperReport>

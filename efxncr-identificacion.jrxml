@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-03-23T20:36:48 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="efxncr-identificacion" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="2aefb6d8-3a1d-4f69-bdfc-a845b66df30d">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="identificacionIdSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<parameter name="identificacionIdList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="identificacionFamiliaSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="identificacionFamiliaList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="identificacionContactabilidadSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="identificacionContactabilidadList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="identificacionDiscrepanciasSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="identificacionDiscrepanciasList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="nombreCompleto" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="fechaNacimiento" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="edad" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="nacionalidad" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="tipoNacionalidad" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sexo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="indicadorPersonaDifunta" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="fechaDefuncion" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="indicadorInterdicto" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="fechaInterdicto" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="indicadorVerificadorIdentidad" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="estadoCivil" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="rutConyuge" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="fechaUltimoMatrimonio" class="java.lang.String" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="48" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-20" y="0" width="612" height="41" forecolor="#EFEFEF" backcolor="#FFFFFF" uuid="4d820d72-eb83-4f49-9557-003d39ae1b96">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="30" y="7" width="210" height="30" uuid="c4649ece-088f-4327-818c-75938481d6e6"/>
+				<textElement>
+					<font fontName="Roboto2" size="18"/>
+				</textElement>
+				<text><![CDATA[Identificación Personal]]></text>
+			</staticText>
+			<image>
+				<reportElement x="-4" y="9" width="22" height="22" uuid="0777ac28-2869-4d6d-8a77-0dbf39752f3e"/>
+				<imageExpression><![CDATA["resources/img/icon2.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="59" splitType="Stretch">
+			<subreport overflowType="Stretch">
+				<reportElement mode="Opaque" x="-20" y="3" width="612" height="50" isPrintWhenDetailOverflows="true" uuid="857982c8-4aba-47bc-8024-95244a155384">
+					<printWhenExpression><![CDATA[true]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="nombreCompleto">
+					<subreportParameterExpression><![CDATA[$P{nombreCompleto}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="fechaNacimiento">
+					<subreportParameterExpression><![CDATA[$P{fechaNacimiento}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="edad">
+					<subreportParameterExpression><![CDATA[$P{edad}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="nacionalidad">
+					<subreportParameterExpression><![CDATA[$P{nacionalidad}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="tipoNacionalidad">
+					<subreportParameterExpression><![CDATA[$P{tipoNacionalidad}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="sexo">
+					<subreportParameterExpression><![CDATA[$P{sexo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="indicadorPersonaDifunta">
+					<subreportParameterExpression><![CDATA[$P{indicadorPersonaDifunta}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="fechaDefuncion">
+					<subreportParameterExpression><![CDATA[$P{fechaDefuncion}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="indicadorInterdicto">
+					<subreportParameterExpression><![CDATA[$P{indicadorInterdicto}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="fechaInterdicto">
+					<subreportParameterExpression><![CDATA[$P{fechaInterdicto}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="indicadorVerificadorIdentidad">
+					<subreportParameterExpression><![CDATA[$P{indicadorVerificadorIdentidad}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="rutConyuge">
+					<subreportParameterExpression><![CDATA[$P{rutConyuge}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="estadoCivil">
+					<subreportParameterExpression><![CDATA[$P{estadoCivil}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{identificacionIdList}]]></dataSourceExpression>
+				<subreportExpression><![CDATA["efxncr-identificacion-id.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="59" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<subreport overflowType="Stretch">
+				<reportElement mode="Opaque" x="-20" y="3" width="612" height="50" isPrintWhenDetailOverflows="true" uuid="6f844c8c-d695-4f16-a526-0f8adda8abaa">
+					<printWhenExpression><![CDATA[true]]></printWhenExpression>
+				</reportElement>
+				<dataSourceExpression><![CDATA[$P{identificacionContactabilidadList}]]></dataSourceExpression>
+				<subreportExpression><![CDATA["efxncr-identificacion-contactabilidad.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="68">
+			<subreport overflowType="Stretch">
+				<reportElement mode="Opaque" x="-20" y="3" width="612" height="50" isPrintWhenDetailOverflows="true" uuid="ef4ed794-5ab2-4eb2-b3e8-85f80dc62409">
+					<printWhenExpression><![CDATA[true]]></printWhenExpression>
+				</reportElement>
+				<dataSourceExpression><![CDATA[$P{identificacionDiscrepanciasList}]]></dataSourceExpression>
+				<subreportExpression><![CDATA["efxncr-identificacion-discrepancias.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

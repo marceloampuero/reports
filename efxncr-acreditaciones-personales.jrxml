@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-03-21T17:13:33 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="efxncr-identificacion" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="2aefb6d8-3a1d-4f69-bdfc-a845b66df30d">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="numeroVehiculos" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="vehiculosMontoTotalAvaluo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="numeroPropiedades" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="propiedadesMontoTotalAvaluo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="socioeconomico" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="ise" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sociedades" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="relacionesComoSocio" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="comercioExterior" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="ultimaExportacion" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="montoUltimaExportacion" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="ordenesNoPago" class="java.lang.String" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="25" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="570" height="25" forecolor="#EFEFEF" backcolor="#999CA6" uuid="4d820d72-eb83-4f49-9557-003d39ae1b96">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="21" y="0" width="289" height="25" forecolor="#FFFFFF" uuid="c4649ece-088f-4327-818c-75938481d6e6">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="16"/>
+				</textElement>
+				<text><![CDATA[Acreditaciones Personales]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="225">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="10" width="240" height="20" backcolor="#F6F6F6" uuid="5da13b45-cf1a-4297-b932-7765162cf203"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Vehículos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="30" width="120" height="20" uuid="db6c56e5-87a8-4d35-88f8-60caf674190d"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Nº Vehículos *]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="50" width="120" height="20" backcolor="#F6F6F6" uuid="9fe03bfb-bb12-4d3e-8ae9-60e664fab511"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Monto Total Avalúo Fiscal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="70" width="240" height="20" uuid="25f3afb0-9146-49fc-8e35-b89079a27d32"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Propiedades **]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="90" width="120" height="20" backcolor="#F6F6F6" uuid="2b0abad6-5f21-40e5-95f5-b59b616b8c0c"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Nº Propiedades]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="30" width="120" height="20" uuid="0427f11f-456b-4c40-bdab-8ea7861ec1ac">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Relaciones como Socio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="290" y="50" width="120" height="20" backcolor="#F6F6F6" uuid="20a6ec61-3fbb-40cc-bcfa-e47e1fa76ae0">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Comercio Exterior]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="70" width="120" height="20" uuid="7bc7439b-e6ae-41f1-af90-b65abdd79bca"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Año Última Exportación]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="290" y="90" width="120" height="20" backcolor="#F6F6F6" uuid="bd11df75-f6af-4dbf-8a67-d09271ebc58e"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Monto Última Exportación]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="110" width="120" height="20" uuid="63d90bd8-849f-4de8-85ef-6daedc356918"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Órdenes de No Pago]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="290" y="10" width="120" height="20" backcolor="#F6F6F6" uuid="7107a427-7e3a-43f3-9f8f-1baff5733ee7"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Sociedades]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="120" y="30" width="120" height="20" uuid="18bbf9b7-8fc6-4cfb-b80b-16fc0164c88a"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{numeroVehiculos}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="120" y="50" width="120" height="20" backcolor="#F6F6F6" uuid="d3d68277-945e-4a41-b7be-828ecd66fa3a"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{vehiculosMontoTotalAvaluo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="120" y="90" width="120" height="20" backcolor="#F6F6F6" uuid="0dd91fe1-483e-4e02-b404-a4005c43e327"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{numeroPropiedades}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="410" y="50" width="120" height="20" backcolor="#F6F6F6" uuid="ecfd3402-e946-4533-8105-053b72a8c296">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box leftPadding="7">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{comercioExterior}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="410" y="70" width="120" height="20" uuid="973a957d-8074-49d8-a156-aa38e8797174"/>
+				<box leftPadding="7">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ultimaExportacion}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="410" y="90" width="120" height="20" backcolor="#F6F6F6" uuid="e1ba6b00-1e47-4b5b-b61f-cea534ad9492"/>
+				<box leftPadding="7">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{montoUltimaExportacion}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="410" y="110" width="120" height="20" uuid="03a717cf-beb2-4bcc-a38b-7edf14062ff8"/>
+				<box leftPadding="7">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ordenesNoPago}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="410" y="10" width="120" height="20" backcolor="#F6F6F6" uuid="491f69b3-8f79-497d-88b0-a6946de5b471"/>
+				<box leftPadding="7">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{sociedades}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="110" width="120" height="20" uuid="023ca5da-dc24-40c1-9f71-92b601a484ec"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Monto Total Avalúo Fiscal]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="120" y="110" width="120" height="20" uuid="224e44ca-b71f-42cc-b4a9-90473367dbaf"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{propiedadesMontoTotalAvaluo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="130" width="120" height="20" backcolor="#F6F6F6" uuid="1d82ff39-4230-4905-97a0-851501b39160"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[Socioeconómico]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="120" y="130" width="120" height="20" backcolor="#F6F6F6" uuid="a0dc5eaa-d977-4ccd-aa1b-dba2931c5802"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{socioeconomico}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="410" y="30" width="120" height="20" uuid="5c980b1c-f502-4384-90ff-9c5bf036f421"/>
+				<box leftPadding="7">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{relacionesComoSocio}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="150" width="120" height="20" uuid="626eb42b-1561-42d7-895a-72b8c85582a9"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[ISE]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="120" y="150" width="120" height="20" uuid="c1667f67-e352-4b4f-9223-293562d02f48"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ise}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="180" width="380" height="20" backcolor="#F6F6F6" uuid="7ca24567-d4b7-4485-9835-82ad4436e27e"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[* La información de Vehículos está actualizada al 25-04-2015]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="200" width="380" height="20" backcolor="#F6F6F6" uuid="3b6d2b34-ef06-469c-8121-71019ffd7e9a"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="9"/>
+				</textElement>
+				<text><![CDATA[** La información de Bienes Raíces está actualizada al 25-04-2015]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+</jasperReport>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-03-22T21:28:06 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="efxncr-identificacion" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="2aefb6d8-3a1d-4f69-bdfc-a845b66df30d">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="indicadorRiesgo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="puntajeCalculado" class="java.lang.String" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="25" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<rectangle>
+				<reportElement x="0" y="0" width="570" height="25" forecolor="#EFEFEF" backcolor="#999CA6" uuid="4d820d72-eb83-4f49-9557-003d39ae1b96">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="30" y="0" width="280" height="25" forecolor="#FFFFFF" uuid="c4649ece-088f-4327-818c-75938481d6e6">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="16"/>
+				</textElement>
+				<text><![CDATA[Indicador de Riesgo]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="216">
+			<staticText>
+				<reportElement mode="Opaque" x="300" y="5" width="250" height="30" backcolor="#FFFFFF" uuid="50c710a8-ff14-4232-8ad4-dba00f24dd78"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="12"/>
+				</textElement>
+				<text><![CDATA[Indicador de Riesgo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="135" width="250" height="40" uuid="b4b36478-0d21-4c75-8d2f-68ec8eacc52e"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.0" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[     El puntaje es un valor que puede variar entre 0 y 999.  A mayor puntaje menor es el riesgo.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="162" width="250" height="48" uuid="9cd854ab-d07f-451e-919c-cf1d5a22c235"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.0" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.0" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Nota: Puntaje de acuerdo a Ley 19.628 sobre Protección de Datos de Carácter personal.]]></text>
+			</staticText>
+			<image>
+				<reportElement x="483" y="17" width="10" height="10" uuid="fc659ae9-eaac-4bb9-be40-5c241a315b41">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<imageExpression><![CDATA["resources/img/icon-info-small.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="309" y="170" width="10" height="10" uuid="57303269-980d-48be-bc7d-3d210f9cfeb7">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<imageExpression><![CDATA["resources/img/icon-info-small.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement mode="Opaque" x="20" y="5" width="250" height="30" backcolor="#FFFFFF" uuid="aa241e73-e494-46bd-b721-c6ce8e3e0a03"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="12"/>
+				</textElement>
+				<text><![CDATA[Evolución del Puntaje en 12 Meses]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="300" y="35" width="250" height="70" uuid="d08f1a06-468c-40a1-85b9-f47e23ba806d"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="46" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{indicadorRiesgo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="300" y="105" width="250" height="30" backcolor="#EFEFEF" uuid="d487a716-a1bc-4af4-87bd-5822ee202fe1"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{puntajeCalculado} == null ?  null : "Puntaje calculado al " + $P{puntajeCalculado}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+</jasperReport>

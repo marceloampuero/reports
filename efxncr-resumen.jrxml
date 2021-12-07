@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-03-08T15:23:09 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="efxncr-resumen" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="20" uuid="d4c18f91-6dca-4f9e-99bc-2b949ad77159">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="42" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<rectangle>
+				<reportElement x="-20" y="0" width="612" height="41" forecolor="#EFEFEF" backcolor="#EFEFEF" uuid="0378a5d6-39a2-487d-922b-aaaf969aebef">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="30" y="3" width="266" height="30" uuid="ad234d72-be9d-4e18-9c3c-b60741d82fd5"/>
+				<textElement>
+					<font fontName="Roboto2" size="18"/>
+				</textElement>
+				<text><![CDATA[Resumen del Informe]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="8" width="22" height="20" uuid="f64c381f-005f-4547-a644-ee40197f2921"/>
+				<imageExpression><![CDATA["resources/img/home.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="274" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="10" width="150" height="40" uuid="bb49a0a8-7e46-4a8a-af3f-0be076657583"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="10"/>
+				</textElement>
+				<text><![CDATA[Total Impagos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="10" width="120" height="40" uuid="a85ba047-454d-4077-9dba-9467ae48c1d2"/>
+				<box leftPadding="20" rightPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="24"/>
+				</textElement>
+				<text><![CDATA[12]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="10" y="50" width="270" height="30" backcolor="#EFEFEF" uuid="83f550ed-0aa7-4646-8332-7200552476cc"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="12"/>
+				</textElement>
+				<text><![CDATA[ ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="100" width="150" height="40" uuid="ddbe732b-e18d-470d-86f3-18c171962166"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="10"/>
+				</textElement>
+				<text><![CDATA[Acreditaciones personales y financieras]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="100" width="120" height="40" uuid="2f37351d-ad90-461c-a18e-c3f87e1a57a1"/>
+				<box leftPadding="20" rightPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="24"/>
+				</textElement>
+				<text><![CDATA[12]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="10" y="140" width="270" height="30" backcolor="#EFEFEF" uuid="afa31480-9f73-4401-973c-b78dc4b66b4f"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="12"/>
+				</textElement>
+				<text><![CDATA[ ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="190" width="150" height="40" uuid="ff67c77c-bfa7-41c3-bb92-e67694a8868b"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="10"/>
+				</textElement>
+				<text><![CDATA[Crédito Vigente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="190" width="120" height="40" uuid="9d9d74e3-e8de-44d8-8e72-26093f4bebcd"/>
+				<box leftPadding="20" rightPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="24"/>
+				</textElement>
+				<text><![CDATA[12]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="10" y="230" width="270" height="30" backcolor="#EFEFEF" uuid="328670fa-8da3-45a8-922a-ba797fee9acf"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="12"/>
+				</textElement>
+				<text><![CDATA[ ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="10" width="250" height="40" uuid="8f8ddb40-1924-4d2d-ba58-b398359fe3b9"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="12"/>
+				</textElement>
+				<text><![CDATA[Indicador de Riesgo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="300" y="160" width="250" height="30" backcolor="#EFEFEF" uuid="128352c7-c8b9-4d1c-81af-57729cf7a8db"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Puntaje calculado al 11-12-2015]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="50" width="250" height="110" uuid="fd20074a-a78e-4251-8454-a35c52569921"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="46" isBold="true"/>
+				</textElement>
+				<text><![CDATA[399]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

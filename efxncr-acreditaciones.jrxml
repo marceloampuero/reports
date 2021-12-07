@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-03-22T21:02:44 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="efxncr-identificacion" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="2aefb6d8-3a1d-4f69-bdfc-a845b66df30d">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="informacionBancariaSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="informacionBancariaList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="cuentaCorrienteSubreport" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="cuentaCorrienteList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="ordenesNoPagoSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="ordenesNoPagoList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="vehiculosPropiedadesSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="vehiculosPropiedadesList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="acreditacionesPersonalesSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<parameter name="acreditacionesPersonalesList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="informacionTributariaSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<parameter name="informacionTributariaList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="estadoCuentaCorriente" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="numeroVehiculos" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="vehiculosMontoTotalAvaluo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="numeroPropiedades" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="propiedadesMontoTotalAvaluo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="socioeconomico" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="ise" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sociedades" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="relacionesComoSocio" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="comercioExterior" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="ultimaExportacion" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="montoUltimaExportacion" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="ordenesNoPago" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="descripcionActividadEconomica" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="infraccionesTributarias" class="java.lang.String" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="55" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-20" y="1" width="612" height="41" forecolor="#EFEFEF" backcolor="#FFFFFF" uuid="4d820d72-eb83-4f49-9557-003d39ae1b96">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="30" y="8" width="210" height="30" uuid="c4649ece-088f-4327-818c-75938481d6e6">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Roboto2" size="18"/>
+				</textElement>
+				<text><![CDATA[Acreditaciones]]></text>
+			</staticText>
+			<image>
+				<reportElement x="-4" y="10" width="22" height="22" uuid="0777ac28-2869-4d6d-8a77-0dbf39752f3e">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<imageExpression><![CDATA["resources/img/icon3.jpg"]]></imageExpression>
+			</image>
+			<break>
+				<reportElement x="0" y="0" width="100" height="1" uuid="eb3ccb09-802e-40b9-999a-52be9e3c9de8">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+			</break>
+		</band>
+	</title>
+	<detail>
+		<band height="59" splitType="Stretch">
+			<subreport overflowType="Stretch">
+				<reportElement mode="Opaque" x="-20" y="0" width="612" height="50" isPrintWhenDetailOverflows="true" uuid="f600b5ac-8ed7-4a26-ac02-902229c221a6">
+					<printWhenExpression><![CDATA[true]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="numeroVehiculos">
+					<subreportParameterExpression><![CDATA[$P{numeroVehiculos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="vehiculosMontoTotalAvaluo">
+					<subreportParameterExpression><![CDATA[$P{vehiculosMontoTotalAvaluo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="numeroPropiedades">
+					<subreportParameterExpression><![CDATA[$P{numeroPropiedades}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="propiedadesMontoTotalAvaluo">
+					<subreportParameterExpression><![CDATA[$P{propiedadesMontoTotalAvaluo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="socioeconomico">
+					<subreportParameterExpression><![CDATA[$P{socioeconomico}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="ise">
+					<subreportParameterExpression><![CDATA[$P{ise}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="sociedades">
+					<subreportParameterExpression><![CDATA[$P{sociedades}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="relacionesComoSocio">
+					<subreportParameterExpression><![CDATA[$P{relacionesComoSocio}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="comercioExterior">
+					<subreportParameterExpression><![CDATA[$P{comercioExterior}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="ultimaExportacion">
+					<subreportParameterExpression><![CDATA[$P{ultimaExportacion}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="montoUltimaExportacion">
+					<subreportParameterExpression><![CDATA[$P{montoUltimaExportacion}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="ordenesNoPago">
+					<subreportParameterExpression><![CDATA[$P{ordenesNoPago}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{acreditacionesPersonalesList}]]></dataSourceExpression>
+				<subreportExpression><![CDATA["efxncr-acreditaciones-personales.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="59" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<subreport overflowType="Stretch">
+				<reportElement mode="Opaque" x="-20" y="0" width="612" height="50" isPrintWhenDetailOverflows="true" uuid="23428f34-dbe0-4285-96b2-850004be336a">
+					<printWhenExpression><![CDATA[true]]></printWhenExpression>
+				</reportElement>
+				<dataSourceExpression><![CDATA[$P{ordenesNoPagoList}]]></dataSourceExpression>
+				<subreportExpression><![CDATA["efxncr-ordenes-no-pago.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="59" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<subreport overflowType="Stretch">
+				<reportElement mode="Opaque" x="-20" y="0" width="612" height="50" isPrintWhenDetailOverflows="true" uuid="3db1e01a-e10e-41f2-8fb8-334d8ec010ad">
+					<printWhenExpression><![CDATA[true]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="descripcionActividadEconomica">
+					<subreportParameterExpression><![CDATA[$P{descripcionActividadEconomica}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="infraccionesTributarias">
+					<subreportParameterExpression><![CDATA[$P{infraccionesTributarias}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{informacionTributariaList}]]></dataSourceExpression>
+				<subreportExpression><![CDATA["efxncr-informacion-tributaria.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

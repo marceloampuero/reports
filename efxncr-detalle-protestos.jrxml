@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-03-23T03:34:06 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="efxncr-identificacion" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="2aefb6d8-3a1d-4f69-bdfc-a845b66df30d">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="morosidadSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="morosidadList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="boletinSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="boletinList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="morosidadTotalImpagos" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="morosidadMontoTotalImpagos" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="laboralTotalImpagos" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="laboralMontoTotalImpagos" class="java.lang.String" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="25" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="570" height="25" forecolor="#EFEFEF" backcolor="#999CA6" uuid="4d820d72-eb83-4f49-9557-003d39ae1b96">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="30" y="0" width="410" height="25" forecolor="#FFFFFF" uuid="c4649ece-088f-4327-818c-75938481d6e6">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="16"/>
+				</textElement>
+				<text><![CDATA[Detalle de Protestos y Morosidades Impagas]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="59" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<subreport overflowType="Stretch">
+				<reportElement mode="Opaque" x="-20" y="3" width="612" height="50" isPrintWhenDetailOverflows="true" uuid="676ffb05-34f4-4bb8-b8c2-360a6d77f519">
+					<printWhenExpression><![CDATA[true]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="morosidadTotalImpagos">
+					<subreportParameterExpression><![CDATA[$P{morosidadTotalImpagos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="morosidadMontoTotalImpagos">
+					<subreportParameterExpression><![CDATA[$P{morosidadMontoTotalImpagos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{morosidadList}]]></dataSourceExpression>
+				<subreportExpression><![CDATA["efxncr-morosidades.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="59" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<subreport overflowType="Stretch">
+				<reportElement mode="Opaque" x="-21" y="4" width="612" height="50" isPrintWhenDetailOverflows="true" uuid="cbf599ed-1f4e-4066-9843-c6fbc546d5bd">
+					<printWhenExpression><![CDATA[true]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="laboralTotalImpagos">
+					<subreportParameterExpression><![CDATA[$P{laboralTotalImpagos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="laboralMontoTotalImpagos">
+					<subreportParameterExpression><![CDATA[$P{laboralMontoTotalImpagos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{boletinList}]]></dataSourceExpression>
+				<subreportExpression><![CDATA["efxncr-boletin-comercial.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-03-23T03:27:44 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="efxncr-identificacion" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="2aefb6d8-3a1d-4f69-bdfc-a845b66df30d">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="indicadorRiesgoSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="indicadorRiesgoList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="resumenMorosidadesSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="resumenMorosidadesList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="indicadorPrevencionFraudeSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="indicadorPrevencionFraudeList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="consultasRutSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="consultasRutList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="detalleProtestosSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="detalleProtestosList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="deudaSistemaFinancieroSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="deudaSistemaFinancieroList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="morosidadSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="morosidadList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="boletinSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="boletinList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="morosidadTotalImpagos" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="morosidadMontoTotalImpagos" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="laboralTotalImpagos" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="laboralMontoTotalImpagos" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="indicadorRiesgo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="puntajeCalculado" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsPeriodoUltimosSeis" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsPeriodoSeisDoce" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsPeriodoDoce24" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsPeriodoMas24" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsPeriodoTotales" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsAcumuladosUltimosSeis" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsAcumuladosSeisDoce" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsAcumuladosDoce24" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsAcumuladosMas24" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsAcumuladosTotales" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsMontosPeriodoUltimosSeis" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsMontosPeriodoSeisDoce" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsMontosPeriodoDoce24" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsMontosPeriodoMas24" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsMontosPeriodoTotales" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsMontosAcumuladosUltimosSeis" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsMontosAcumuladosSeisDoce" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsMontosAcumuladosDoce24" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsMontosAcumuladosMas24" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="docsMontosAcumuladosTotales" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="morosidadesTotalImpagos" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="morosidadesMontoTotalImpagos" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="morosidadesVencimientoUltimoProtesto" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="morosidadesMontoUltimoPago" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="consultasRutUltimos6Meses" class="java.lang.String" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="47" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-20" y="4" width="612" height="41" forecolor="#EFEFEF" backcolor="#FFFFFF" uuid="4d820d72-eb83-4f49-9557-003d39ae1b96">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="30" y="11" width="241" height="30" uuid="c4649ece-088f-4327-818c-75938481d6e6"/>
+				<textElement>
+					<font fontName="Roboto2" size="18"/>
+				</textElement>
+				<text><![CDATA[Comportamiento Financiero]]></text>
+			</staticText>
+			<image>
+				<reportElement x="-4" y="13" width="22" height="22" uuid="0777ac28-2869-4d6d-8a77-0dbf39752f3e"/>
+				<imageExpression><![CDATA["resources/img/icon4.jpg"]]></imageExpression>
+			</image>
+			<break>
+				<reportElement x="0" y="1" width="100" height="1" uuid="c6e7534c-3499-4b0f-9428-d4be7795e928">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+			</break>
+		</band>
+	</title>
+	<detail>
+		<band height="59" splitType="Stretch">
+			<subreport overflowType="Stretch">
+				<reportElement mode="Opaque" x="-20" y="3" width="612" height="50" isPrintWhenDetailOverflows="true" uuid="536d4b91-7c38-4bbe-b294-4f09c461e685">
+					<printWhenExpression><![CDATA[true]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="indicadorRiesgo">
+					<subreportParameterExpression><![CDATA[$P{indicadorRiesgo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="puntajeCalculado">
+					<subreportParameterExpression><![CDATA[$P{puntajeCalculado}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{indicadorRiesgoList}]]></dataSourceExpression>
+				<subreportExpression><![CDATA["efxncr-indicador-riesgo.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="59" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<subreport overflowType="Stretch">
+				<reportElement mode="Opaque" x="-20" y="3" width="612" height="50" isPrintWhenDetailOverflows="true" uuid="b3abd2e7-0b16-436e-ae6b-c7fdd9553625">
+					<printWhenExpression><![CDATA[true]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="indicadorRiesgoSubreport">
+					<subreportParameterExpression><![CDATA[$P{indicadorRiesgoSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="indicadorRiesgoList">
+					<subreportParameterExpression><![CDATA[$P{indicadorRiesgoList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="resumenMorosidadesSubreport">
+					<subreportParameterExpression><![CDATA[$P{resumenMorosidadesSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="resumenMorosidadesList">
+					<subreportParameterExpression><![CDATA[$P{resumenMorosidadesList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="indicadorPrevencionFraudeSubreport">
+					<subreportParameterExpression><![CDATA[$P{indicadorPrevencionFraudeSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="indicadorPrevencionFraudeList">
+					<subreportParameterExpression><![CDATA[$P{indicadorPrevencionFraudeList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="consultasRutSubreport">
+					<subreportParameterExpression><![CDATA[$P{consultasRutSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="consultasRutList">
+					<subreportParameterExpression><![CDATA[$P{consultasRutList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="detalleProtestosSubreport">
+					<subreportParameterExpression><![CDATA[$P{detalleProtestosSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="detalleProtestosList">
+					<subreportParameterExpression><![CDATA[$P{detalleProtestosList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="deudaSistemaFinancieroSubreport">
+					<subreportParameterExpression><![CDATA[$P{deudaSistemaFinancieroSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="deudaSistemaFinancieroList">
+					<subreportParameterExpression><![CDATA[$P{deudaSistemaFinancieroList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="morosidadSubreport">
+					<subreportParameterExpression><![CDATA[$P{morosidadSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="morosidadList">
+					<subreportParameterExpression><![CDATA[$P{morosidadList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="boletinSubreport">
+					<subreportParameterExpression><![CDATA[$P{boletinSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="boletinList">
+					<subreportParameterExpression><![CDATA[$P{boletinList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="morosidadTotalImpagos">
+					<subreportParameterExpression><![CDATA[$P{morosidadTotalImpagos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="morosidadMontoTotalImpagos">
+					<subreportParameterExpression><![CDATA[$P{morosidadMontoTotalImpagos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="laboralTotalImpagos">
+					<subreportParameterExpression><![CDATA[$P{laboralTotalImpagos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="laboralMontoTotalImpagos">
+					<subreportParameterExpression><![CDATA[$P{laboralMontoTotalImpagos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="indicadorRiesgo">
+					<subreportParameterExpression><![CDATA[$P{indicadorRiesgo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="puntajeCalculado">
+					<subreportParameterExpression><![CDATA[$P{puntajeCalculado}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="docsPeriodoUltimosSeis">
+					<subreportParameterExpression><![CDATA[$P{docsPeriodoUltimosSeis}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="docsPeriodoSeisDoce">
+					<subreportParameterExpression><![CDATA[$P{docsPeriodoSeisDoce}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="docsPeriodoDoce24">
+					<subreportParameterExpression><![CDATA[$P{docsPeriodoDoce24}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="docsPeriodoMas24">
+					<subreportParameterExpression><![CDATA[$P{docsPeriodoMas24}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="docsPeriodoTotales">
+					<subreportParameterExpression><![CDATA[$P{docsPeriodoTotales}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="docsAcumuladosUltimosSeis">
+					<subreportParameterExpression><![CDATA[$P{docsAcumuladosUltimosSeis}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="docsAcumuladosSeisDoce">
+					<subreportParameterExpression><![CDATA[$P{docsAcumuladosSeisDoce}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="docsAcumuladosDoce24">
+					<subreportParameterExpression><![CDATA[$P{docsAcumuladosDoce24}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="docsAcumuladosMas24">
+					<subreportParameterExpression><![CDATA[$P{docsAcumuladosMas24}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="docsAcumuladosTotales">
+					<subreportParameterExpression><![CDATA[$P{docsAcumuladosTotales}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="docsMontosPeriodoUltimosSeis">
+					<subreportParameterExpression><![CDATA[$P{docsMontosPeriodoUltimosSeis}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="docsMontosPeriodoSeisDoce">
+					<subreportParameterExpression><![CDATA[$P{docsMontosPeriodoSeisDoce}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="docsMontosPeriodoDoce24">
+					<subreportParameterExpression><![CDATA[$P{docsMontosPeriodoDoce24}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="docsMontosPeriodoMas24">
+					<subreportParameterExpression><![CDATA[$P{docsMontosPeriodoMas24}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="docsMontosPeriodoTotales">
+					<subreportParameterExpression><![CDATA[$P{docsMontosPeriodoTotales}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="docsMontosAcumuladosUltimosSeis">
+					<subreportParameterExpression><![CDATA[$P{docsMontosAcumuladosUltimosSeis}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="docsMontosAcumuladosSeisDoce">
+					<subreportParameterExpression><![CDATA[$P{docsMontosAcumuladosSeisDoce}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="docsMontosAcumuladosDoce24">
+					<subreportParameterExpression><![CDATA[$P{docsMontosAcumuladosDoce24}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="docsMontosAcumuladosMas24">
+					<subreportParameterExpression><![CDATA[$P{docsMontosAcumuladosMas24}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="docsMontosAcumuladosTotales">
+					<subreportParameterExpression><![CDATA[$P{docsMontosAcumuladosTotales}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="morosidadesTotalImpagos">
+					<subreportParameterExpression><![CDATA[$P{morosidadesTotalImpagos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="morosidadesMontoTotalImpagos">
+					<subreportParameterExpression><![CDATA[$P{morosidadesMontoTotalImpagos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="morosidadesVencimientoUltimoProtesto">
+					<subreportParameterExpression><![CDATA[$P{morosidadesVencimientoUltimoProtesto}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="morosidadesMontoUltimoPago">
+					<subreportParameterExpression><![CDATA[$P{morosidadesMontoUltimoPago}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{resumenMorosidadesList}]]></dataSourceExpression>
+				<subreportExpression><![CDATA["efxncr-resumen-morosidades.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="59" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<subreport overflowType="Stretch">
+				<reportElement mode="Opaque" x="-20" y="3" width="612" height="50" isPrintWhenDetailOverflows="true" uuid="a22d59ac-bee0-4ae5-9175-cf30bb157ca6">
+					<printWhenExpression><![CDATA[true]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="consultasRutUltimos6Meses">
+					<subreportParameterExpression><![CDATA[$P{consultasRutUltimos6Meses}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{consultasRutList}]]></dataSourceExpression>
+				<subreportExpression><![CDATA["efxncr-consultas-rut.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="59" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<subreport overflowType="Stretch">
+				<reportElement mode="Opaque" x="-20" y="3" width="612" height="50" isPrintWhenDetailOverflows="true" uuid="14a8034a-bc8d-4152-a1b5-80e02d29e0ad">
+					<printWhenExpression><![CDATA[true]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="morosidadSubreport">
+					<subreportParameterExpression><![CDATA[$P{morosidadSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="morosidadList">
+					<subreportParameterExpression><![CDATA[$P{morosidadList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="boletinSubreport">
+					<subreportParameterExpression><![CDATA[$P{boletinSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="boletinList">
+					<subreportParameterExpression><![CDATA[$P{boletinList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="morosidadTotalImpagos">
+					<subreportParameterExpression><![CDATA[$P{morosidadTotalImpagos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="morosidadMontoTotalImpagos">
+					<subreportParameterExpression><![CDATA[$P{morosidadMontoTotalImpagos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="laboralTotalImpagos">
+					<subreportParameterExpression><![CDATA[$P{laboralTotalImpagos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="laboralMontoTotalImpagos">
+					<subreportParameterExpression><![CDATA[$P{laboralMontoTotalImpagos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{detalleProtestosList}]]></dataSourceExpression>
+				<subreportExpression><![CDATA["efxncr-detalle-protestos.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="59" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<subreport overflowType="Stretch">
+				<reportElement mode="Opaque" x="-20" y="3" width="612" height="50" isPrintWhenDetailOverflows="true" uuid="dd856933-9546-4688-967c-50c58182dda9">
+					<printWhenExpression><![CDATA[true]]></printWhenExpression>
+				</reportElement>
+				<dataSourceExpression><![CDATA[$P{deudaSistemaFinancieroList}]]></dataSourceExpression>
+				<subreportExpression><![CDATA["efxncr-deuda-sistema-financiero.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

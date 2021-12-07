@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-03-23T01:05:13 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="efxncr-identificacion" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="2aefb6d8-3a1d-4f69-bdfc-a845b66df30d">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Sample DB"/>
+	<property name="net.sf.jasperreports.style.evaluation.time.enabled" value="true"/>
+	<style name="fuenteRojo1" forecolor="#FA0C00">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{tipoDeCredito}.equals("Directos impagos entre 30 y < 90 díassss")]]></conditionExpression>
+			<style/>
+		</conditionalStyle>
+	</style>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="tipoDeCredito" class="java.lang.String"/>
+	<field name="col1Periodo" class="java.lang.String"/>
+	<field name="col2Periodo" class="java.lang.String"/>
+	<field name="col3Periodo" class="java.lang.String"/>
+	<field name="col4Periodo" class="java.lang.String"/>
+	<field name="col5Periodo" class="java.lang.String"/>
+	<field name="col6Periodo" class="java.lang.String"/>
+	<field name="col7Periodo" class="java.lang.String"/>
+	<field name="col8Periodo" class="java.lang.String"/>
+	<field name="col9Periodo" class="java.lang.String"/>
+	<field name="col10Periodo" class="java.lang.String"/>
+	<field name="col11Periodo" class="java.lang.String"/>
+	<field name="col12Periodo" class="java.lang.String"/>
+	<field name="agrupado" class="java.lang.String"/>
+	<field name="rojo" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="5">
+			<break>
+				<reportElement x="0" y="4" width="568" height="1" uuid="12929481-017f-49ca-835f-dee9ed6e44d1"/>
+			</break>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="60" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement x="0" y="30" width="150" height="30" uuid="34c740c3-6c4a-4d3b-8f4e-14606daf335d"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="8"/>
+				</textElement>
+				<text><![CDATA[Tipo de Crédito:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="30" width="35" height="30" uuid="c1a74c59-8edd-43e1-ba0e-671dcfe7b0fa"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="8"/>
+				</textElement>
+				<text><![CDATA[ENE 2015]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="30" width="35" height="30" uuid="13911f1f-76c3-4386-ab17-7b82cf1b9329"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="8"/>
+				</textElement>
+				<text><![CDATA[FEB 2015]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="30" width="35" height="30" uuid="8645974e-052e-4adf-8e99-625092634237">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="8"/>
+				</textElement>
+				<text><![CDATA[MAR 2015]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="255" y="30" width="35" height="30" uuid="d8d006b3-83d4-447e-8e49-aea5205f2f9e">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="8"/>
+				</textElement>
+				<text><![CDATA[ABR 2015]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="30" width="35" height="30" uuid="943239d5-cf54-4d2f-9ff6-835b88edd112">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="8"/>
+				</textElement>
+				<text><![CDATA[MAY 2015]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="325" y="30" width="35" height="30" uuid="63b4fd1f-f29e-4280-a0d2-4b2c5fd35672">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="8"/>
+				</textElement>
+				<text><![CDATA[JUN 2015]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="30" width="35" height="30" uuid="124d4d50-f30f-486f-b35e-d6e18f3b5e28">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="8"/>
+				</textElement>
+				<text><![CDATA[JUL 2015]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="395" y="30" width="35" height="30" uuid="370efc2d-15e4-4823-9a80-68fea6d23e34">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="8"/>
+				</textElement>
+				<text><![CDATA[AGO 2015]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="30" width="35" height="30" uuid="86f42ca8-9bb5-4fdd-a1f7-620b51fb7348">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="8"/>
+				</textElement>
+				<text><![CDATA[SEP 2015]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="465" y="30" width="35" height="30" uuid="12a9e539-b790-4937-ad99-7068c193636a">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="8"/>
+				</textElement>
+				<text><![CDATA[OCT 2015]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="30" width="35" height="30" uuid="c207f85d-584e-46e5-a8ae-b92c02bb6c43">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="8"/>
+				</textElement>
+				<text><![CDATA[NOV 2015]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="535" y="30" width="35" height="30" uuid="b9a8261c-3bd4-48ed-b8aa-5478eb196317">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="8"/>
+				</textElement>
+				<text><![CDATA[DIC 2015]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="0" width="570" height="25" forecolor="#EFEFEF" backcolor="#999CA6" uuid="f8c0541b-a86c-4bac-b54c-c0df8100035a">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="30" y="0" width="410" height="25" forecolor="#FFFFFF" uuid="aadb23d9-b2a1-4a1a-8659-8e512e85c5e2">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="16"/>
+				</textElement>
+				<text><![CDATA[Deuda en el Sistema Financiero (en miles de $)]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="570" height="20" backcolor="#F6F6F6" uuid="e3943335-3de6-4a38-ad91-2360c63f4d01">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<printWhenExpression><![CDATA[($V{REPORT_COUNT} % 2) == 0]]></printWhenExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="150" height="20" uuid="fb88ce94-4b5f-48c1-bb65-e7f692aa15f1">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="4">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto2" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tipoDeCredito}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="185" y="0" width="35" height="20" uuid="5adbd661-c77d-423e-8947-597292059a40">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Roboto2" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( !$F{col2Periodo}.equals("0") && $F{rojo}.equals("1") ? "<style forecolor='red'>"+ $F{col2Periodo}+"</style>" : $F{col2Periodo} )]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement key="" stretchType="RelativeToTallestObject" x="150" y="0" width="35" height="20" uuid="55a96699-22d2-4ff9-af9d-7fd46664c827">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Roboto2" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( !$F{col1Periodo}.equals("0") && $F{rojo}.equals("1") ? "<style forecolor='red'>"+ $F{col1Periodo}+"</style>" : $F{col1Periodo} )]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="220" y="0" width="35" height="20" uuid="727e43de-1fd4-448e-ab09-6c9cd4f41df3">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Roboto2" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( !$F{col3Periodo}.equals("0") && $F{rojo}.equals("1") ? "<style forecolor='red'>"+ $F{col3Periodo}+"</style>" : $F{col3Periodo} )]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="290" y="0" width="35" height="20" uuid="ce2befac-ef43-4482-b08e-c92d241d03de">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Roboto2" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( !$F{col5Periodo}.equals("0") && $F{rojo}.equals("1") ? "<style forecolor='red'>"+ $F{col5Periodo}+"</style>" : $F{col5Periodo} )]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="255" y="0" width="35" height="20" uuid="96b05944-6d50-4827-98ce-131cc12ef03f">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Roboto2" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( !$F{col4Periodo}.equals("0") && $F{rojo}.equals("1") ? "<style forecolor='red'>"+ $F{col4Periodo}+"</style>" : $F{col4Periodo} )]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="325" y="0" width="35" height="20" uuid="d7ceb7a5-bd6f-441b-a46c-479c0742ba1e">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Roboto2" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( !$F{col6Periodo}.equals("0") && $F{rojo}.equals("1") ? "<style forecolor='red'>"+ $F{col6Periodo}+"</style>" : $F{col6Periodo} )]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="395" y="0" width="35" height="20" uuid="f129eb9f-b2d1-4c9d-a46b-55ef35cd073e">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Roboto2" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( !$F{col8Periodo}.equals("0") && $F{rojo}.equals("1") ? "<style forecolor='red'>"+ $F{col8Periodo}+"</style>" : $F{col8Periodo} )]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="360" y="0" width="35" height="20" uuid="218962da-e2d1-4e1f-9f36-0edca4ac55be">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Roboto2" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( !$F{col7Periodo}.equals("0") && $F{rojo}.equals("1") ? "<style forecolor='red'>"+ $F{col7Periodo}+"</style>" : $F{col7Periodo} )]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="430" y="0" width="35" height="20" uuid="95f5545f-333a-4386-9925-6fa8eeb9a000">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Roboto2" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( !$F{col9Periodo}.equals("0") && $F{rojo}.equals("1") ? "<style forecolor='red'>"+ $F{col9Periodo}+"</style>" : $F{col9Periodo} )]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="500" y="0" width="35" height="20" uuid="e83d1a9f-aba7-4d80-8ae0-2bf891bf9740">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Roboto2" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( !$F{col11Periodo}.equals("0") && $F{rojo}.equals("1") ? "<style forecolor='red'>"+ $F{col11Periodo}+"</style>" : $F{col11Periodo} )]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="465" y="0" width="35" height="20" uuid="375646a2-4b92-4457-934b-7ef8bb704ce0">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Roboto2" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( !$F{col10Periodo}.equals("0") && $F{rojo}.equals("1") ? "<style forecolor='red'>"+ $F{col10Periodo}+"</style>" : $F{col10Periodo} )]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="535" y="0" width="35" height="20" uuid="8b36529e-0448-4293-925a-dba84048228b">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box leftPadding="4">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#E4E4E4"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Roboto2" size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( !$F{col12Periodo}.equals("0") && $F{rojo}.equals("1") ? "<style forecolor='red'>"+ $F{col12Periodo}+"</style>" : $F{col12Periodo} )]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

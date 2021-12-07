@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-03-21T17:00:53 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="efxncr" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="10" bottomMargin="10" uuid="9b264342-a9ea-41f1-ba0f-ee1c3bb0d98c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="resumenSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="resumenList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="identificacionSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="identificacionList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="acreditacionesSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="acreditacionesList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="comportamientoSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="comportamientoList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="antecedentesSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="antecedentesDatosEmpresaHistoricos" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="antecedentesProfesion" class="java.lang.String"/>
+	<parameter name="antecedentesOficio" class="java.lang.String"/>
+	<parameter name="antecedentesDatosEmpresa" class="java.util.Map"/>
+	<parameter name="identificacionIdSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="identificacionIdList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="identificacionFamiliaSubreport" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="identificacionFamiliaList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="identificacionContactabilidadSubreport" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="identificacionContactabilidadList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="identificacionDiscrepanciasSubreport" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="identificacionDiscrepanciasList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="informacionBancariaSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="informacionBancariaList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="cuentaCorrienteSubreport" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="cuentaCorrienteList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="ordenesNoPagoSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="ordenesNoPagoList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="vehiculosPropiedadesSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="vehiculosPropiedadesList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="acreditacionesPersonalesSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<parameter name="acreditacionesPersonalesList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="informacionTributariaSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<parameter name="informacionTributariaList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="indicadorRiesgoSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="indicadorRiesgoList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="resumenMorosidadesSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="resumenMorosidadesList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="indicadorPrevencionFraudeSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="indicadorPrevencionFraudeList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="consultasRutSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="consultasRutList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="detalleProtestosSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="detalleProtestosList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="deudaSistemaFinancieroSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="deudaSistemaFinancieroList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="nombreCompleto" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="rut" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="edad" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="fechaInforme" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="horaInforme" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="numeroCertificado" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="totalImpagos" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="acreditacionesFinancieras" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="creditoVigente" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="indicadorRiesgo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="puntajeCalculado" class="java.lang.String"/>
+	<parameter name="fechaNacimiento" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="nacionalidad" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="tipoNacionalidad" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sexo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="indicadorPersonaDifunta" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="fechaDefuncion" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="indicadorInterdicto" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="fechaInterdicto" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="indicadorVerificadorIdentidad" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="estadoCivil" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="rutConyuge" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="fechaUltimoMatrimonio" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="estadoCuentaCorriente" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="morosidadSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="morosidadList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="boletinSubreport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="boletinList" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="morosidadTotalImpagos" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="morosidadMontoTotalImpagos" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="laboralTotalImpagos" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="laboralMontoTotalImpagos" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="numeroVehiculos" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="vehiculosMontoTotalAvaluo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="numeroPropiedades" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="propiedadesMontoTotalAvaluo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="socioeconomico" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="ise" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="sociedades" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="relacionesComoSocio" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="comercioExterior" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="ultimaExportacion" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="montoUltimaExportacion" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="ordenesNoPago" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="descripcionActividadEconomica" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="infraccionesTributarias" class="java.lang.String" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="Fecha" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Hora" class="java.lang.String"/>
+	<variable name="imgHome" class="java.lang.String">
+		<initialValueExpression><![CDATA["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"]]></initialValueExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="94" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<image>
+				<reportElement x="22" y="13" width="110" height="30" uuid="8d674b43-aa7f-4dde-8a40-09b7c24ee4c2">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<imageExpression><![CDATA["resources/img/logo.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="340" y="25" width="60" height="23" uuid="5f011e4f-19d7-4191-b864-397f0aea7466"/>
+				<textElement>
+					<font fontName="Roboto2" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha Informe:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="25" width="40" height="23" uuid="ee76eabc-85a9-44d3-80d7-c4cd5e8e020d"/>
+				<textElement>
+					<font fontName="Roboto2" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hora:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="-21" y="40" width="612" height="50" forecolor="#4D5059" backcolor="#4D5059" uuid="a3295497-dcf1-4c78-bc45-3b940d00573c"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="340" y="62" width="40" height="20" forecolor="#FFFFFF" uuid="9c57fb0f-ee3f-4ee0-84a2-4d305161012a"/>
+				<textElement>
+					<font fontName="Roboto2" size="12"/>
+				</textElement>
+				<text><![CDATA[RUT:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="62" width="40" height="20" forecolor="#FFFFFF" uuid="a2ba45cc-16de-4664-8b7f-a0dd9ac144b3"/>
+				<textElement>
+					<font fontName="Roboto2" size="12"/>
+				</textElement>
+				<text><![CDATA[EDAD:]]></text>
+			</staticText>
+			<image>
+				<reportElement x="129" y="14" width="196" height="34" uuid="cebe0d69-0d55-4ee9-ada2-5b48f16bf44b"/>
+				<imageExpression><![CDATA["resources/img/platinum-360.png"]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="6" y="59" width="319" height="30" forecolor="#FFFFFF" uuid="cfb71fa5-0f5f-4662-8e29-e54c68570ed7"/>
+				<textElement>
+					<font fontName="Roboto2" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nombreCompleto}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="374" y="62" width="96" height="20" forecolor="#FFFFFF" uuid="02a3e540-2191-416e-b5c4-7e6be6220df3"/>
+				<textElement>
+					<font fontName="Roboto2" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{rut}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="512" y="62" width="62" height="20" forecolor="#FFFFFF" uuid="c26d409b-acb8-4ec5-babb-1345499df642"/>
+				<textElement>
+					<font fontName="Roboto2" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{edad} + " AÑOS"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="25" width="60" height="23" uuid="18cbee43-a54a-4984-827f-4f0fa898633a"/>
+				<textElement>
+					<font fontName="Roboto2" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fechaInforme}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="25" width="40" height="23" uuid="7d335d9c-c847-4f98-afb4-96d0d05a23c4"/>
+				<textElement>
+					<font fontName="Roboto2" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{horaInforme}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="40" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[$V{PAGE_NUMBER} != 1]]></printWhenExpression>
+			<image>
+				<reportElement x="-1" y="15" width="96" height="20" uuid="d37e4f9f-52ae-4cdb-8458-3ef43883bd74">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<imageExpression><![CDATA["resources/img/logo.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="84" y="16" width="146" height="17" uuid="fdd36461-c6b9-48a1-a2f9-4ab574a1762c"/>
+				<imageExpression><![CDATA["resources/img/platinum-360.png"]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="232" y="16" width="360" height="20" forecolor="#4D5059" backcolor="#4D5059" uuid="ed1af34d-4842-476a-b75b-45221b2247e3"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="424" y="19" width="30" height="20" forecolor="#FFFFFF" uuid="add3d867-d2ac-4435-98c2-3b2c1e238671">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font fontName="Roboto2" size="8"/>
+				</textElement>
+				<text><![CDATA[RUT:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="513" y="19" width="40" height="20" forecolor="#FFFFFF" uuid="91adc23c-76ab-40c6-9473-96ad477a4998"/>
+				<textElement>
+					<font fontName="Roboto2" size="8"/>
+				</textElement>
+				<text><![CDATA[EDAD:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="240" y="19" width="180" height="17" forecolor="#FFFFFF" uuid="bba6739a-be37-4be9-98e3-4d7782b831e6"/>
+				<textElement>
+					<font fontName="Roboto2" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nombreCompleto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="443" y="19" width="66" height="20" forecolor="#FFFFFF" uuid="df3383a2-12e4-4678-89e2-5fcde1f698f8"/>
+				<textElement>
+					<font fontName="Roboto2" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{rut}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="539" y="19" width="40" height="20" forecolor="#FFFFFF" uuid="625b84a5-172d-45d7-be79-9a8c3881fe1d"/>
+				<textElement>
+					<font fontName="Roboto2" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{edad} +  " AÑOS"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="70" splitType="Stretch">
+			<subreport overflowType="Stretch">
+				<reportElement mode="Opaque" x="-20" y="0" width="612" height="60" isPrintWhenDetailOverflows="true" uuid="31b25d5d-d52c-4cb6-a64d-c5ca085eeeb6">
+					<printWhenExpression><![CDATA[true]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="totalImpagos">
+					<subreportParameterExpression><![CDATA[$P{totalImpagos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="acreditacionesFinancieras">
+					<subreportParameterExpression><![CDATA[$P{acreditacionesFinancieras}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="creditoVigente">
+					<subreportParameterExpression><![CDATA[$P{creditoVigente}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="indicadorRiesgo">
+					<subreportParameterExpression><![CDATA[$P{indicadorRiesgo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="puntajeCalculado">
+					<subreportParameterExpression><![CDATA[$P{puntajeCalculado}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{resumenList}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{resumenSubreport}]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="70" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<subreport overflowType="Stretch">
+				<reportElement positionType="Float" mode="Opaque" x="-20" y="0" width="612" height="60" isPrintWhenDetailOverflows="true" uuid="34fe157b-6bf4-47a4-85b7-09b1f7bbad8a">
+					<printWhenExpression><![CDATA[true]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="identificacionIdSubreport">
+					<subreportParameterExpression><![CDATA[$P{identificacionIdSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="identificacionIdList">
+					<subreportParameterExpression><![CDATA[$P{identificacionIdList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="identificacionFamiliaSubreport">
+					<subreportParameterExpression><![CDATA[$P{identificacionFamiliaSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="identificacionFamiliaList">
+					<subreportParameterExpression><![CDATA[$P{identificacionFamiliaList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="identificacionContactabilidadSubreport">
+					<subreportParameterExpression><![CDATA[$P{identificacionContactabilidadSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="identificacionContactabilidadList">
+					<subreportParameterExpression><![CDATA[$P{identificacionContactabilidadList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="identificacionDiscrepanciasSubreport">
+					<subreportParameterExpression><![CDATA[$P{identificacionDiscrepanciasSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="identificacionDiscrepanciasList">
+					<subreportParameterExpression><![CDATA[$P{identificacionDiscrepanciasList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="nombreCompleto">
+					<subreportParameterExpression><![CDATA[$P{nombreCompleto}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="edad">
+					<subreportParameterExpression><![CDATA[$P{edad}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="fechaNacimiento">
+					<subreportParameterExpression><![CDATA[$P{fechaNacimiento}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="nacionalidad">
+					<subreportParameterExpression><![CDATA[$P{nacionalidad}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="tipoNacionalidad">
+					<subreportParameterExpression><![CDATA[$P{tipoNacionalidad}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="sexo">
+					<subreportParameterExpression><![CDATA[$P{sexo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="indicadorPersonaDifunta">
+					<subreportParameterExpression><![CDATA[$P{indicadorPersonaDifunta}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="fechaDefuncion">
+					<subreportParameterExpression><![CDATA[$P{fechaDefuncion}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="indicadorInterdicto">
+					<subreportParameterExpression><![CDATA[$P{indicadorInterdicto}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="fechaInterdicto">
+					<subreportParameterExpression><![CDATA[$P{fechaInterdicto}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="indicadorVerificadorIdentidad">
+					<subreportParameterExpression><![CDATA[$P{indicadorVerificadorIdentidad}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="estadoCivil">
+					<subreportParameterExpression><![CDATA[$P{estadoCivil}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="rutConyuge">
+					<subreportParameterExpression><![CDATA[$P{rutConyuge}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="fechaUltimoMatrimonio">
+					<subreportParameterExpression><![CDATA[$P{fechaUltimoMatrimonio}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{identificacionList}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{identificacionSubreport}]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="70" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<subreport overflowType="Stretch">
+				<reportElement positionType="Float" mode="Opaque" x="-20" y="0" width="612" height="60" isPrintWhenDetailOverflows="true" uuid="406ab398-cc29-4ffb-b3fa-e48b797c5ac4">
+					<printWhenExpression><![CDATA[true]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="informacionBancariaSubreport">
+					<subreportParameterExpression><![CDATA[$P{informacionBancariaSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="informacionBancariaList">
+					<subreportParameterExpression><![CDATA[$P{informacionBancariaList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="cuentaCorrienteSubreport">
+					<subreportParameterExpression><![CDATA[$P{cuentaCorrienteSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="cuentaCorrienteList">
+					<subreportParameterExpression><![CDATA[$P{cuentaCorrienteList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="ordenesNoPagoSubreport">
+					<subreportParameterExpression><![CDATA[$P{ordenesNoPagoSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="ordenesNoPagoList">
+					<subreportParameterExpression><![CDATA[$P{ordenesNoPagoList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="vehiculosPropiedadesSubreport">
+					<subreportParameterExpression><![CDATA[$P{vehiculosPropiedadesSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="vehiculosPropiedadesList">
+					<subreportParameterExpression><![CDATA[$P{vehiculosPropiedadesList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="acreditacionesPersonalesSubreport">
+					<subreportParameterExpression><![CDATA[$P{acreditacionesPersonalesSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="acreditacionesPersonalesList">
+					<subreportParameterExpression><![CDATA[$P{acreditacionesPersonalesList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="informacionTributariaSubreport">
+					<subreportParameterExpression><![CDATA[$P{informacionTributariaSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="informacionTributariaList">
+					<subreportParameterExpression><![CDATA[$P{informacionTributariaList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="estadoCuentaCorriente">
+					<subreportParameterExpression><![CDATA[$P{estadoCuentaCorriente}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="numeroVehiculos">
+					<subreportParameterExpression><![CDATA[$P{numeroVehiculos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="vehiculosMontoTotalAvaluo">
+					<subreportParameterExpression><![CDATA[$P{vehiculosMontoTotalAvaluo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="numeroPropiedades">
+					<subreportParameterExpression><![CDATA[$P{numeroPropiedades}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="propiedadesMontoTotalAvaluo">
+					<subreportParameterExpression><![CDATA[$P{propiedadesMontoTotalAvaluo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="socioeconomico">
+					<subreportParameterExpression><![CDATA[$P{socioeconomico}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="ise">
+					<subreportParameterExpression><![CDATA[$P{ise}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="sociedades">
+					<subreportParameterExpression><![CDATA[$P{sociedades}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="relacionesComoSocio">
+					<subreportParameterExpression><![CDATA[$P{relacionesComoSocio}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="comercioExterior">
+					<subreportParameterExpression><![CDATA[$P{comercioExterior}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="ultimaExportacion">
+					<subreportParameterExpression><![CDATA[$P{ultimaExportacion}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="montoUltimaExportacion">
+					<subreportParameterExpression><![CDATA[$P{montoUltimaExportacion}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="ordenesNoPago">
+					<subreportParameterExpression><![CDATA[$P{ordenesNoPago}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="descripcionActividadEconomica">
+					<subreportParameterExpression><![CDATA[$P{descripcionActividadEconomica}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="infraccionesTributarias">
+					<subreportParameterExpression><![CDATA[$P{infraccionesTributarias}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{acreditacionesList}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{acreditacionesSubreport}]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="70" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<subreport overflowType="Stretch">
+				<reportElement mode="Opaque" x="-20" y="0" width="612" height="60" isPrintWhenDetailOverflows="true" uuid="e38acff3-6b1a-4d97-b691-15a069d2f77a">
+					<printWhenExpression><![CDATA[true]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="indicadorRiesgoSubreport">
+					<subreportParameterExpression><![CDATA[$P{indicadorRiesgoSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="indicadorRiesgoList">
+					<subreportParameterExpression><![CDATA[$P{indicadorRiesgoList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="resumenMorosidadesSubreport">
+					<subreportParameterExpression><![CDATA[$P{resumenMorosidadesSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="resumenMorosidadesList">
+					<subreportParameterExpression><![CDATA[$P{resumenMorosidadesList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="indicadorPrevencionFraudeSubreport">
+					<subreportParameterExpression><![CDATA[$P{indicadorPrevencionFraudeSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="indicadorPrevencionFraudeList">
+					<subreportParameterExpression><![CDATA[$P{indicadorPrevencionFraudeList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="consultasRutSubreport">
+					<subreportParameterExpression><![CDATA[$P{consultasRutSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="consultasRutList">
+					<subreportParameterExpression><![CDATA[$P{consultasRutList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="detalleProtestosSubreport">
+					<subreportParameterExpression><![CDATA[$P{detalleProtestosSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="detalleProtestosList">
+					<subreportParameterExpression><![CDATA[$P{detalleProtestosList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="deudaSistemaFinancieroSubreport">
+					<subreportParameterExpression><![CDATA[$P{deudaSistemaFinancieroSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="deudaSistemaFinancieroList">
+					<subreportParameterExpression><![CDATA[$P{deudaSistemaFinancieroList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="morosidadSubreport">
+					<subreportParameterExpression><![CDATA[$P{morosidadSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="morosidadList">
+					<subreportParameterExpression><![CDATA[$P{morosidadList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="boletinSubreport">
+					<subreportParameterExpression><![CDATA[$P{boletinSubreport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="boletinList">
+					<subreportParameterExpression><![CDATA[$P{boletinList}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="morosidadTotalImpagos">
+					<subreportParameterExpression><![CDATA[$P{morosidadTotalImpagos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="morosidadMontoTotalImpagos">
+					<subreportParameterExpression><![CDATA[$P{morosidadMontoTotalImpagos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="laboralTotalImpagos">
+					<subreportParameterExpression><![CDATA[$P{laboralTotalImpagos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="laboralMontoTotalImpagos">
+					<subreportParameterExpression><![CDATA[$P{laboralMontoTotalImpagos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{comportamientoList}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{comportamientoSubreport}]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="70" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<subreport overflowType="Stretch">
+				<reportElement mode="Opaque" x="-20" y="0" width="612" height="60" isPrintWhenDetailOverflows="true" uuid="bf06d33b-32b4-4323-99c2-8333bca08841">
+					<printWhenExpression><![CDATA[true]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="antecedentesOficio">
+					<subreportParameterExpression><![CDATA[$P{antecedentesOficio}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="antecedentesProfesion">
+					<subreportParameterExpression><![CDATA[$P{antecedentesProfesion}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="antecedentesDatosEmpresa">
+					<subreportParameterExpression><![CDATA[$P{antecedentesDatosEmpresa}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{antecedentesDatosEmpresaHistoricos}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{antecedentesSubreport}]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="76" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement mode="Opaque" x="-10" y="0" width="572" height="30" backcolor="#E6E7E8" uuid="767a7377-cde8-41bc-8a9e-001302d3fa1a">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Roboto2" size="6"/>
+				</textElement>
+				<text><![CDATA[El presente informe Comercial no puede ser utilizado en procesos de selección de personal, admisión pre-escolar, escolar o educación superior, atención médica de urgencia o postulación a un cargo público, conforme  a la Ley N° 20.575. Fuentes: Bases de Datos Equifax, Información Pública, Diario Oficial, Aportante Boletín Dicom, Servicio Nacional de Aduanas, Boletín de Informaciones Comerciales, Dirección del Trabajo. La data contenida en este Informe se ajusta a la Ley N° 19.628 y su modificación contenida en la Ley N° 19.812.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="54" width="40" height="20" uuid="bff45cf2-a51b-4fac-ab5c-f57a6851b12e"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="8"/>
+				</textElement>
+				<text><![CDATA[Página]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="265" y="54" width="20" height="20" uuid="d44139b8-4e49-4525-a534-a813aa31511b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="8"/>
+				</textElement>
+				<text><![CDATA[de]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="250" y="54" width="20" height="20" uuid="93882dd5-7aff-4085-b458-c1d909131a5c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="285" y="54" width="44" height="20" uuid="4ac477a1-f556-40db-a569-9921d6b65877"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="-10" y="24" width="572" height="30" backcolor="#E6E7E8" uuid="c32da6b6-a893-4967-b8ca-7583c1d7fe53"/>
+				<box>
+					<topPen lineWidth="0.0" lineColor="#9D1A34"/>
+					<leftPen lineWidth="0.0" lineColor="#9D1A34"/>
+					<bottomPen lineWidth="0.0" lineColor="#9D1A34"/>
+					<rightPen lineWidth="0.0" lineColor="#9D1A34"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Esta es una copia emitida con el propósito de validar el informe original. La información contenida en este documento está actualizada hasta la fecha de emisión del mismo. Los datos publicados en este informe, pudieron modificarse en forma posterior a la fecha de emisión. Para más información contactar a nuestro servicio de atención al cliente al 600 3784329.]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="170" splitType="Stretch">
+			<image>
+				<reportElement x="240" y="70" width="90" height="80" uuid="8a26bfaf-7da7-4b13-9f3a-7e5ca6626997"/>
+				<imageExpression><![CDATA["http://www.socialmediaexaminer.com/images/0211jk-sme-code.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="60" y="30" width="480" height="30" uuid="28fbb23e-3757-4171-bc62-da706b55c245"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto2"/>
+				</textElement>
+				<text><![CDATA[Verifique la autenticidad del reporte a través de http://www.equifax.cl/verificacion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="10" width="70" height="20" uuid="4260ac64-7f42-4cf7-86a0-a62ac0953f6c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Roboto2"/>
+				</textElement>
+				<text><![CDATA[Nº Certificado:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="240" y="10" width="240" height="20" uuid="d9a3852d-b53d-4b9b-a2ef-2676171ffc89"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Roboto2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{numeroCertificado}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
